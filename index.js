@@ -50,7 +50,7 @@ app.post('/webhook', async (req, res) => {
     // Check if the message contains "hello"
     if (incomingMessage.toLowerCase().includes("hello")) {
       // Send response message
-      const message = "Hello! How can I assist you today?";
+      const message = '\n1. Send Money\n2. Luku/Tukuza\n3. Lipa Hapa & Pay Bills\n4. Buy Airtime\n5. Cash Withdraw\n6. Loans\n7. My Account\n8. Other Services';
       await sendWhatsAppSMS(senderPhoneNumber, message);
     }
   }
